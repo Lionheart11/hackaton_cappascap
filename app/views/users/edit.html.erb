@@ -1,0 +1,44 @@
+<div id="edit">
+
+  <%= form_for(@user) do |f| %>
+  <div class="row">
+    <div id="section1" class="col-md-4">
+      <h1>Mon profil</h1>
+
+      <img src="/assets/__" alt="__" />
+      
+        <div class="field">
+          <%= f.label :nickname, "Surnom" %>
+          <%= f.text_field :nickname, class: 'form-control', placeholder: 'Surnom', :autofocus => true, required:  true %>
+        </div>
+        
+        <div class="field">
+          <%= f.label :birthday, "Dâte de naissance" %>
+          <%= f.date_field :birthday, class: 'form-control', placeholder: 'Age', required:  true %>
+        </div>
+        
+        <div class="field">
+          <%= f.label :email, "Email" %>
+          <%= f.email_field :email, class: 'form-control', placeholder: 'Email', required:  true %> 
+        </div>
+        
+        <div class="field">
+          <%= f.label :password, "Mot de passe" %>
+          <%= f.password_field :password, class: 'form-control', placeholder: 'Mot de passe', required:  true %>
+        </div>
+        
+        <div class="field">
+          <%= f.label :password_confirmation, "Confirmation mot de passe" %>
+          <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Confirmation mot de passe', required:  true %>
+        </div>
+         <h1>Centres d'intérêts</h1>
+            <div id="area">
+              <%= text_area(:post, :body, cols: 60, rows: 10) %>
+            </div>
+
+        <div class="actions">
+          <%= f.submit "Mettre à jour mon profil", class: "btn btn-info" %>
+        </div>
+    </div>
+  <% end %>
+</div>

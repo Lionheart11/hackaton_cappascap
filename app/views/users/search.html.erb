@@ -1,0 +1,6 @@
+<div id="search">
+	<% @users.each do |user| %>
+		<%= link_to user.nickname, defi_path(user.id), method: :post %>
+	<% end %>
+</div>
+
