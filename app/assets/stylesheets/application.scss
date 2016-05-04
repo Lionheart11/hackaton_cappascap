@@ -31,7 +31,8 @@
  color: violet;
  margin: 30px;
  font-size: 20px;
- }  
+ }
+
  .bouton2
  {
  text-align: center;
@@ -40,8 +41,42 @@
  font-size: 20px;
  }  
  
- button_to
- {
- border-radius: 40px;
- }
+
+.navbar
+{
+	border-radius: 0 0 35px 35px;
+	background: violet;
+	color: white;
+	border: 2px solid violet;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+	color: white;
+}
+
+.navbar-default .navbar-nav > .open > a
+{
+	background: purple;
+	color: white;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
+{
+	background:linear-gradient(to right, violet, purple);
+	color: white;
+}
+
+.navbar-nav > li > .dropdown-menu
+{
+	background:linear-gradient(to right, violet, purple);
+	color: white;
+}
+
+.defi {
+	color: violet;
+}
+.licorn{
+	text-align: center;
+}
 }
