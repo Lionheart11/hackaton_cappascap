@@ -1,10 +1,16 @@
 class DefisController < ApplicationController
-	def defi
-		@defi = Defi.new
+	def index
+		@defis = Defi.where(user_id: current_user.id)
 	end
 
 	def create
-		binding.pry
-		Defi.create(author: current_user, user: params[:user], description: Defi.questions.sample)		
+		# binding.pry
+		defi = Defi.create(author_id: current_user.id, user_id: params[:user_id], description: Defi.questions.sample)		
+		redirect_to defi_path(defi.id)
+	end
+
+	def show
+		# binding.pry
+		@defis = Defi.find(params[:id])
 	end
 end

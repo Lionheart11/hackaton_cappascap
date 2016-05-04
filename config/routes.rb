@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   resources :users
   get 'search' => 'users#search'
-  post 'defi' => 'defis#create'
+
+  resources :defis, only: [:index, :create, :show]
+  # get 'defi' => 'defis#defi'
 end

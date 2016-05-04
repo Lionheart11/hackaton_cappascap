@@ -1,5 +1,5 @@
 class Defi < ActiveRecord::Base
-	belongs_to :author , class_name: 'User'
+	belongs_to :author, class_name: 'User'
 	belongs_to :user 
 
 	def self.questions
@@ -12,6 +12,5 @@ class Defi < ActiveRecord::Base
 		"Embrasser son gros orteil"
 	 ]
 	end	
+	# Defi.questions.sample
 end
-
-self.questions.sample
