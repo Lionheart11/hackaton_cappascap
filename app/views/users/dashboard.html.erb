@@ -1,5 +1,16 @@
-<h1>hello !</h1>
+<div id="dashboard">
 
-<%= button_to 'Lancer un Défi', search_path, method: :get %>
+	<div class="logo-1">
+    <%= image_tag("logo.png") %> 
+  </div>
 
-<%= button_to 'Mes Défis', defis_path, method: :get %>
+	<h1>Bienvenue !</h1> </br> </br> </br> </br>
+
+	<div class="defi">
+		<%= button_to 'Lancer un Défi', search_path, method: :get %>
+	</div>
+
+	<div class="defi">
+		<%= button_to 'Mes Défis', defis_path, method: :get %>
+	</div>
+</div>	

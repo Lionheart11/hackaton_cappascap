@@ -1,1 +1,16 @@
-<%= Defi.find(params[:id]).description %>
+
+
+<div class="description">
+	<%= @defi.description %>
+</div>
+
+
+<div class="row">
+	<div class="choix col-xs-6">
+		<%= link_to image_tag("dot_green.png"), defis_victoire_path %>
+	</div>
+
+	<div class="choix col-xs-6">
+		<%= link_to image_tag("dot_red.png"), defis_defaite_path %>
+	</div>
+</div>

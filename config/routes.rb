@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :users
   get 'search' => 'users#search'
 
-  resources :defis, only: [:index, :create, :show]
+  resources :defis
+ 	get "user/:id/defis/defaite" => "defis#defaite", as: :defis_defaite
+ 	get "user/:id/defis/victoire" => "defis#victoire", as: :defis_victoire
   # get 'defi' => 'defis#defi'
 end

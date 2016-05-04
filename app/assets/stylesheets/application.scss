@@ -10,9 +10,71 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-// @import "bootstrap-responsive";
+
+.font
+{
+	font-size: 4.5rem;
+}
+
+.container
+{
+	margin-top: 65%;
+	margin-left: 50px;
+	text-align: center;
+}
+
+.description {
+	margin-top: 65%;
+	font-size: 6rem;
+}
+
+.choix {
+	display: inline-block;
+	margin-top: 30%;
+	
+	height: 100px;
+}
+
+#search
+{
+	text-align: center;
+	font-size: 4.5rem;
+}
+
+#dashboard
+{
+	font-size: 8rem;
+	text-align: center;
+}
+
+#mes-defis
+{
+	font-size: 6rem;
+	text-align: center;
+}
+
+.logo-1
+{
+	margin-right: 2%;
+}
+
+.nickname
+{
+	font: italic bold 1.5em Georgia, serif;
+}
+
+.nelson
+{
+	margin-top: 20%;
+	margin-left: 15%;
+}
+
+.quote
+{
+	font-size: 15rem;
+	font-weight: bold;
+	text-align: center;
+}

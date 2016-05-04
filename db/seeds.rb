@@ -56,3 +56,10 @@ alexandre = User.create(
 	email: "alexandre@wcs.fr",
 	password: "12345678",
 	)
+
+bruce = User.create(
+	nickname: "Brousse Lit",
+	birthday: DateTime.new(1995,03,24),
+	email: "alexandre@wcs.fr",
+	password: "12345678",
+	)

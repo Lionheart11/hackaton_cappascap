@@ -1,6 +1,12 @@
-<h1>Mes Défis</h1>
-
-<% @defis.each do |defi| %>
-	<%= defi.author.nickname %>
-	<%= defi.description %>
-<% end %>
+<div id="mes-defis">
+	<div>
+		<h1>Mes Défis</h1> </br> </br> </br>
+	</div>
+		<% @defis.each do |defi| %>
+			<div class="nickname">
+				<%= defi.author.nickname %>
+			</div>	
+			<%= defi.description %> </br>
+		<% end %>
+	
+</div>	

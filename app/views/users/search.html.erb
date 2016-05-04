@@ -1,6 +1,9 @@
 <div id="search">
+  Personnes à défier </br>
 	<% @users.each do |user| %>
-		<%= link_to user.nickname, defis_path(user_id: user.id), method: :post %> </br>
+    <% if user != current_user %>
+      <%= link_to user.nickname, defis_path(user_id: user.id), method: :post %> </br>
+    <% end %>
 	<% end %>
 </div>
 
